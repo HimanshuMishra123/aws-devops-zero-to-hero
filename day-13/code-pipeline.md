@@ -8,6 +8,7 @@ Visual Workflow: CodePipeline provides a visual representation of your release p
 Versioning and Traceability: CodePipeline keeps track of all the changes in your pipeline, allowing you to easily revert to a previous state if needed.
 Scalability and Reliability: As a fully managed service, CodePipeline scales automatically to handle your pipeline needs, and provides high availability and durability.
 
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/391a239a-08a2-4a27-b9ad-68a98edfa488)
 
 How does AWS CodePipeline work?
 Source Stage: This is the starting point of your pipeline, where you define the source of your application code, such as GitHub, Bitbucket, or AWS CodeCommit.
