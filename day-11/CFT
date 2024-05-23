@@ -15,14 +15,21 @@ Components of AWS Cloud Formation Templates
 1. **Template Structure**: CFT templates can be written in either YAML or JSON format. The template consists of the following main sections:
    - `AWSTemplateFormatVersion`: Specifies the version of the template format.
    - `Description`: A brief description of the template.
-   - `Parameters`: Defines the input parameters for the template.
+   - `Parameters`: Defines the input parameters(variables) for the template.Provided at runtime.
+   - `Rules`: To validate the parameters submitted by the user (like crosschecking the parameters submitted by the user)
+               example- Type of EC2, naming convention of s3 bucket
+   - Mappings - Mappings section is used to define static values such as regional settings, AMI IDs, or other configuration details 
+                that vary based on certain conditions, such as region, environment type, or instance type. 
+                  Key Concepts of Mappings-
+                  Static Values: Unlike parameters, which are provided at runtime, mappings contain static values that do not change.
+                  Lookup Table: Mappings act like a lookup table where you can retrieve values based on keys.
+                  Hierarchical Structure: Mappings are organized in a hierarchical structure with keys and corresponding values.
    - `Conditions`: Defines the conditions under which resources are created, updated, or deleted.
    - `Resources`: Defines the AWS resources to be created and their properties.
    - `Outputs`: Defines the values to be returned when you view the stack's properties.
 
-2. **Resource Definitions**: Each resource in the template is defined with a logical ID, resource type, and properties. For example:
+2. **Resource Definitions**: Each resource in the template is defined with a logical ID, resource type, and properties. For example(Yaml):
 
-   ```yaml
    Resources:
      MyVPC:
        Type: AWS::EC2::VPC
