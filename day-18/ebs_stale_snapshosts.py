@@ -7,6 +7,7 @@ def lambda_handler(event, context):               # It receives event and contex
     response = ec2.describe_snapshots(OwnerIds=['self'])
 
     # The describe_instances method is called with a filter to get only the EC2 instances that are currently running.
+    # filtter use krte hai specific tarah ke instance filtter out krne ke liye
     instances_response = ec2.describe_instances(Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])
    
 
