@@ -1,14 +1,15 @@
-import boto3
+import boto3                                      # To import boto3 package
 
 def lambda_handler(event, context):
-    ec2 = boto3.client('ec2')
+    ec2 = boto3.client('ec2')                     # create a client name EC2
 
     # Get all EBS snapshots
     response = ec2.describe_snapshots(OwnerIds=['self'])
 
-    # Get all active EC2 instance IDs
+    # Get all running EC2 instances
     instances_response = ec2.describe_instances(Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])
-    active_instance_ids = set()
+   
+    active_instance_ids = set()                   #creating a set to store EC2 ids
 
     for reservation in instances_response['Reservations']:
         for instance in reservation['Instances']:
