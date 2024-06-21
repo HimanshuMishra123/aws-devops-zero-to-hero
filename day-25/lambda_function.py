@@ -27,7 +27,7 @@ def lambda_handler(event, context):
     instance_id = configuration_item['configuration']['instanceId']
     
 
-    # Get complete Instance details
+    # Get complete Instance details (no Json parsing neeeded as boto3 already returns a python dictionery)
     instance = ec2_client.describe_instances(InstanceIds=[instance_id])['Reservations'][0]['Instances'][0]
     
     # Check if the specific EC2 instance has Cloud Trail logging enabled.
@@ -43,13 +43,13 @@ def lambda_handler(event, context):
         'OrderingTimestamp': config['notificationCreationTime']
     }
     
-    config_client = boto3.client('config')              # in boto3 config doc search "put_evaluations"
+    config_client = boto3.client('config')              
     
-    response = config_client.put_evaluations(
-        Evaluations=[evaluation],
-        ResultToken=event['resultToken']    #Identifies the rule and the event that triggered the evaluation.
+    response = config_client.put_evaluations(         # in boto3 config doc search "put_evaluations"
+        Evaluations=[evaluation],                     # evaluation data
+        ResultToken=event['resultToken']              #result token identifies the rule and the event that triggered the evaluation.
 
 
     )  
     
-    return response
+    return response                                   # which will given back to config
