@@ -2,7 +2,8 @@
 
 Note: In every organizational projects(Banking, financial, government) there are compliance and security poilicies/rules which we have to follow and implement. As a DevOps Engineer we have to ensure that all the resources in the AWS account are basically compliant to organizational rules and regulations.  <br/>
 
-![alt text](<Day-25 _ AWS Config _ Identify Compliant and Non Compliant AWS resources   _#aws #abhishekveeramalla 18-25 screenshot.png>)
+![Day-25 _ AWS Config _ Identify Compliant and Non Compliant AWS resources   _#aws #abhishekveeramalla 18-25 screenshot](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/42a678df-9af4-4972-9dc3-97c45ad0de45)
+
 
 Note: you might be thinking how will I come to know about these things, you have to ask you manager that I want to set up the compliance rules and I want to set up AWS config and I want to verify how many resources are compliant and how many resources are non-compliant and I want to give you a detailed information can you provide me detailed set of rules and regulations that you are looking for right, so this is what you do using AWS config now this is very very important because complaints is related to security Whenever there is something related to security your organization takes that as the highest priority.<br/>
 
