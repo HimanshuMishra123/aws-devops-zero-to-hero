@@ -42,6 +42,9 @@ AWS Secrets Manager is designed for managing sensitive information that requires
   - **Integration**: Works with other AWS services and can trigger Lambda functions for custom rotation logic.
   - **Security**: Provides robust encryption and detailed access control.
 
+Secrets Manager can integrate with Lambda functions and it can ask you to write your custom Secrets rotation policy and you can integrate it with your custom Lambda function logic as well right so because of these reasons during your interview you can say that I use a combination of both systems manager and secrets manager whenever it is required to use systems manager I'll go with it and whenever I require Secrets manager I'll go with it.<br/>
+Keep in mind that cost of secrets manger is high so we have to use it wisely bcoz in organization you will be having lot's of highly sensitive keys, certificates, credentials.<br/>
+
 
 #### HashiCorp Vault
 HashiCorp Vault is an open-source tool that provides robust secrets management and data protection. It's not an AWS service but can be used on AWS.
