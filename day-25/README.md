@@ -8,6 +8,7 @@ Note: In every organizational projects(Banking, financial, government) there are
 Note: you might be thinking how will I come to know about these things, you have to ask you manager that I want to set up the compliance rules and I want to set up AWS config and I want to verify how many resources are compliant and how many resources are non-compliant and I want to give you a detailed information can you provide me detailed set of rules and regulations that you are looking for right, so this is what you do using AWS config now this is very very important because complaints is related to security Whenever there is something related to security your organization takes that as the highest priority.<br/>
 
 one such example that I've taken is this one that is ec2 detailed monitoring.<br/>
+so whenever any EC2 instance in created modified or updated the config rule will trigger the lambda function. <br/>
 
 we'll use AWS Config to detect compliant and non-compliant ec2 instances for below rule.
 - compliant ec2 instance has monitoring enabled
@@ -36,13 +37,21 @@ Step 2: Create a Custom Config Rule
 
     Click on the "Add rule" button.
 
-    Choose "Create a custom rule."
+    Choose "Create a custom Lambda rule."
+
+    You can use AWS Lambda as the trigger source. If you haven't already created a Lambda function for this rule, create one that checks whether monitoring is enabled      for an EC2 instance. The Lambda function will return whether the resource is compliant or not based on monitoring status.
 
     Give your rule a name and description (e.g., "Monitoring for EC2 Instances").
 
+    Use Lambda function ARN
+    
+    Define the rule trigger type - (when configuration changes).
+    
     For "Scope of changes," choose "Resources."
 
-    Define the rule trigger. You can use AWS Lambda as the trigger source. If you haven't already created a Lambda function for this rule, create one that checks whether monitoring is enabled for an EC2 instance. The Lambda function will return whether the resource is compliant or not based on monitoring status.
+        Resource category - AWS resources
+        Resource type - AWS EC2 Instance
+        Resource identifier (optional) - mtlb kis type ke EC2, any specific filter
 
 Step 3: Define the Custom Rule in AWS Config
 
