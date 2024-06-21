@@ -63,6 +63,10 @@ HashiCorp Vault is an open-source tool that provides robust secrets management a
 - **Features**:
   - **Multi-cloud Support**: Works across different cloud providers and on-premises environments.
   - **Advanced Security**: Offers features like dynamic secrets, leasing, and revocation of secrets.
+            Dynamic secrets: Generated on-demand for each user session and expire after use.
+            Leasing: Secrets come with a time-bound validity. e.g-API access keys valid for 24 hours.
+            Revocation: Immediate invalidation of secrets if compromised, preventing further use.
+
   - **Community Support**: Regular updates and new features from the open-source community.
 
 - **Example**:
