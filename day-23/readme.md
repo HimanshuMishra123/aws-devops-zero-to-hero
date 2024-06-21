@@ -29,11 +29,6 @@ The Parameter Store is part of the AWS Systems Manager. It allows you to store c
   - **Integration**: Easily integrates with other AWS services. For example, you can grant an IAM role to access parameters.
   - **Cost**: More cost-effective compared to AWS Secrets Manager.
 
-- **Example**:
-  ```bash
-  aws ssm put-parameter --name "DockerUsername" --value "your-username" --type "String"
-  aws ssm get-parameter --name "DockerUsername" --with-decryption
-  ```
 
 #### AWS Secrets Manager
 AWS Secrets Manager is designed for managing sensitive information that requires more advanced features, such as automatic rotation and tighter security controls.
@@ -47,11 +42,6 @@ AWS Secrets Manager is designed for managing sensitive information that requires
   - **Integration**: Works with other AWS services and can trigger Lambda functions for custom rotation logic.
   - **Security**: Provides robust encryption and detailed access control.
 
-- **Example**:
-  ```bash
-  aws secretsmanager create-secret --name "MyDatabaseSecret" --secret-string "{\"username\":\"admin\",\"password\":\"password123\"}"
-  aws secretsmanager get-secret-value --secret-id "MyDatabaseSecret"
-  ```
 
 #### HashiCorp Vault
 HashiCorp Vault is an open-source tool that provides robust secrets management and data protection. It's not an AWS service but can be used on AWS.
@@ -62,10 +52,10 @@ HashiCorp Vault is an open-source tool that provides robust secrets management a
 
 - **Features**:
   - **Multi-cloud Support**: Works across different cloud providers and on-premises environments.
-  - **Advanced Security**: Offers features like dynamic secrets, leasing, and revocation of secrets.
-            Dynamic secrets: Generated on-demand for each user session and expire after use.
-            Leasing: Secrets come with a time-bound validity. e.g-API access keys valid for 24 hours.
-            Revocation: Immediate invalidation of secrets if compromised, preventing further use.
+  - **Advanced Security**: Offers features like dynamic secrets, leasing, and revocation of secrets.<br/>
+            Dynamic secrets: Generated on-demand for each user session and expire after use.<br/>
+            Leasing: Secrets come with a time-bound validity. e.g-API access keys valid for 24 hours.<br/>
+            Revocation: Immediate invalidation of secrets if compromised, preventing further use.<br/>
 
   - **Community Support**: Regular updates and new features from the open-source community.
 
