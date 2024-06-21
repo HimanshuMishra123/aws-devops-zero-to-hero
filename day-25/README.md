@@ -42,6 +42,6 @@ Step 3: Define the Custom Rule in AWS Config
 
 Step 4: Monitor and Alert
 
-    AWS Config will now continuously evaluate your EC2 instances against the rule you've created.
+    AWS Config will now continuously watch your EC2 instances and evaluate against the rule you've created.
 
     If any EC2 instance is found without monitoring enabled, the custom rule's Lambda function will mark it as non-compliant.
