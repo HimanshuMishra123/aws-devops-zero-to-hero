@@ -24,6 +24,9 @@ Step 1: Set Up AWS Config
     Configure the delivery channel settings, which include specifying an Amazon S3 bucket where AWS Config will store configuration history.
 
     Choose the resource types you want AWS Config to monitor. In this case, select "Amazon EC2 Instances."
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/7e83e374-483c-4f4b-8822-5628b92065bf)
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/a718126b-fc89-4fec-91a3-c1ae5d910988)
+
 
 Step 2: Create a Custom Config Rule
 
