@@ -19,3 +19,6 @@
 - **AWS Config:** Configuration tracking and compliance monitoring.
 - **AWS CloudTrail:** User activity and API call logging.
 - **Amazon CloudWatch:** Performance monitoring and operational health.
+
+Config reports on WHAT has changed, whereas CloudTrail reports on WHO made the change, WHEN, and from WHICH location.
+Cloudwatch reports what is happening in current.
