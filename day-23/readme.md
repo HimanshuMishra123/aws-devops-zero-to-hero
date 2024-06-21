@@ -62,11 +62,6 @@ HashiCorp Vault is an open-source tool that provides robust secrets management a
 
   - **Community Support**: Regular updates and new features from the open-source community.
 
-- **Example**:
-  ```bash
-  vault kv put secret/myapp/config username='dbuser' password='dbpassword'
-  vault kv get secret/myapp/config
-  ```
 
 #### Choosing the Right Solution
 - **Parameter Store**: Use for less sensitive information where cost efficiency is a priority.
