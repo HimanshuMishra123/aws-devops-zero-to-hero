@@ -43,7 +43,7 @@ def lambda_handler(event, context):
         'OrderingTimestamp': config['notificationCreationTime']
     }
     
-    config_client = boto3.client('config')
+    config_client = boto3.client('config')              # in boto3 config doc search "put_evaluations"
     
     response = config_client.put_evaluations(
         Evaluations=[evaluation],
