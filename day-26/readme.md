@@ -99,3 +99,6 @@ A financial institution needing to secure traffic with an intrusion detection sy
 For a video streaming platform like YouTube, using an NLB is beneficial due to its low latency and high throughput capabilities. However, for a web application requiring content-based routing and SSL offloading, an ALB would be more appropriate.
 
 By understanding and utilizing the appropriate AWS load balancer type, you can ensure your applications are highly available, scalable, and resilient to failure.
+
+
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/47904922-0246-4ae6-aa31-6b8837302918)
