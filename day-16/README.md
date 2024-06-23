@@ -23,7 +23,8 @@
 4. **Logs:**
    - CloudWatch Logs(log groups) collect and monitor log files from AWS resources and applications by default and you can also create log groups
    - Provides detailed insights into system events and application behaviors.
-   - log insights: Provides advanced Sql like query capabilities on log data, helping to analyze, troubleshoot, and optimize applications.(you can save frequently used queries, share, check the history of queries to re-run them) 
+   - log insights: Provides advanced Sql like query capabilities on log data, helping to analyze, troubleshoot, and optimize applications.(you can save frequently used queries, share, check the history of queries to re-run them)
+   - Live Tail: Real-time view of log data as it is being ingested. Useful for debugging and monitoring applications during deployment.
    - Log Anomalies:  Automatically detects unusual patterns in log data. Helps in identifying and troubleshooting issues without predefined thresholds.
      Contributor Insights: Analyze log data and create a time series that displays contributor data. You can see metrics about the top-N contributors, the total number of unique contributors, and their usage. This helps you find top talkers and understand who or what is impacting system performance.
 
