@@ -4,7 +4,7 @@
 - CloudWatch is a monitoring and management service provided by AWS.
 - It can be described as a "gatekeeper" or "watchman" for AWS resources, continuously observing and reporting on activities within the AWS environment.
 - It monitors various AWS resources like EC2 instances, S3 buckets, RDS instances, and more, and provides insights through metrics, logs, and sets alarms to alert you on certain conditions.
-
+ 
 **Key Features of CloudWatch:**
 
 1. **Monitoring:**
