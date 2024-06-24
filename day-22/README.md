@@ -217,3 +217,13 @@ By configuring IAM policies and associating them with IAM roles, you grant speci
 
 By completing these steps, your AWS environment is ready to host an Amazon EKS cluster. You can proceed with creating an EKS cluster using the AWS Management Console or AWS CLI as described in section 3.
 
+
+### ####################################################################################################################################
+
+## AWS EKS VPC Architecture Advance
+
+https://docs.opta.dev/security/aws/
+
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/83545c7b-e8c0-4397-aff5-91c987562e0c)
+
+
