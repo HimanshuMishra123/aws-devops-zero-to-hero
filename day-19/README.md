@@ -16,9 +16,9 @@ If you've never heard of CDN or CloudFront before, don't worry. we'll start from
 
 Imagine you have a website with lots of cool content, like images, videos, and documents. When a user visits your site from a different location far away from your server, the content might take a long time to load. That's where CDN comes to the rescue!
 
-A CDN is like a network of servers spread across various locations worldwide. These servers store a copy of your website's content. When a user requests your website, the content is delivered from the server closest to the user, making it super fast! It's like having a local store for your website content everywhere in the world.
+A CDN is like a network of servers spread across various locations worldwide. These servers store a copy of your website's content. When a user requests your website, the content is delivered from the server/node closest to the user, making it super fast! It's like having a local store for your website content everywhere in the world.
 
-![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/0f4931fb-ce22-49b8-a702-57c189c6b885)
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/8ab7e397-0e73-4d9a-b82e-83e161f09ac9)
 
 
 ## 2. What is CloudFront?
