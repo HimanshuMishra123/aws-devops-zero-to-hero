@@ -1,3 +1,9 @@
+# Imp. AWS Arch.
+
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/669a370d-90c8-45ff-8c37-2707cab6ca8e)
+
+
+
 # aws-devops-zero-to-hero
 
 Complete YouTube playlist - https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze
