@@ -18,6 +18,9 @@ Imagine you have a website with lots of cool content, like images, videos, and d
 
 A CDN is like a network of servers spread across various locations worldwide. These servers store a copy of your website's content. When a user requests your website, the content is delivered from the server closest to the user, making it super fast! It's like having a local store for your website content everywhere in the world.
 
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/0f4931fb-ce22-49b8-a702-57c189c6b885)
+
+
 ## 2. What is CloudFront?
 
 CloudFront is Amazon Web Services' (AWS) very own CDN service. It integrates seamlessly with other AWS services and allows you to deliver content, videos, applications, and APIs securely with low-latency and high transfer speeds.
