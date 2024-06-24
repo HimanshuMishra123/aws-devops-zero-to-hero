@@ -34,6 +34,9 @@ Here's how the process flows:
 
 The next time someone requests the same image, CloudFront will deliver it from its cache, making it super fast and efficient!
 
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/21efda19-9904-407e-b844-f4561b3a938b)
+
+
 ## 4. Benefits of CloudFront
 
 - **Fast Content Delivery**: CloudFront ensures your content reaches users with minimal delay, making your website lightning fast.
@@ -86,3 +89,7 @@ If you offer software downloads, CloudFront can distribute your files faster, re
 ## 8. Conclusion
 
 By using CloudFront, you can dramatically improve your website's performance, making users happier and potentially boosting your application and business.
+
+## example- To improve response time for website visitors. The distribution object caching TTLs are set to defaults. The publishing process runs every 15 minutes, so to ensure that the website visitors receive the latest content, the team wrote an AWS Lambda function (#6) that invalidates the cache each time an object is removed from (or created in) the S3 bucket using S3 event notifications and triggering lambda function.
+![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/6bc03415-1283-4b26-b7f5-60ea928c84e1)
+
