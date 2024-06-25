@@ -14,7 +14,7 @@ aws iam create-policy \
     --policy-document file://iam_policy.json
 ```
 
-Create IAM Role
+Create IAM service account (for EKS pods to communicate with AWS services) and attaching IAM Role to it
 
 ```
 eksctl create iamserviceaccount \
