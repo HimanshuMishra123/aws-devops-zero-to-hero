@@ -1,3 +1,5 @@
+##### Note: Before this process configure OIDC
+
 # How to setup alb add on
 
 Download IAM policy
@@ -14,7 +16,8 @@ aws iam create-policy \
     --policy-document file://iam_policy.json
 ```
 
-Create IAM service account (for EKS pods to communicate with AWS services) and attaching IAM Role to it
+IAM Service accounts allow you to define permissions for individual pods, rather than for the entire EC2 instance(Node) where the pod is running. ....Refer day-2/Role-vs-ServiceAccount for more understanding about Service account
+Create IAM service account (for EKS pods to communicate with AWS services) and attaching IAM Role(creating and attaching) to it
 
 ```
 eksctl create iamserviceaccount \

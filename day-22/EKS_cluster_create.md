@@ -1,4 +1,4 @@
-# Install EKS
+## EKS cluster create using eksctl prerequisition
 
 Please follow the prerequisites doc before this.
 
