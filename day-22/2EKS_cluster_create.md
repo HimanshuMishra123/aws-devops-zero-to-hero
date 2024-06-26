@@ -17,6 +17,6 @@ eksctl delete cluster --name demo-cluster --region us-east-1
 This command updates your kubeconfig file with configuration details for a specific Amazon EKS cluster. It retrieves the necessary information (like the cluster endpoint and authentication details) and adds a new context to your kubeconfig file. If the context for the specified cluster already exists, it updates it with the latest configuration.
 
 ```
-aws eks update-kubeconfig --name demo-cluster
+aws eks update-kubeconfig --name demo-cluster --region us-east-1
 
 ```

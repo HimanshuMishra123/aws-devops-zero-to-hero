@@ -1,4 +1,5 @@
 # commands to configure IAM OIDC provider 
+This will give Cluster resources secure access to other AWS resources 
 
 ### Check if there is an IAM OIDC provider configured already
 ```
