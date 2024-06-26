@@ -13,10 +13,10 @@ In AWS (Amazon Web Services), IAM (Identity and Access Management) roles and IAM
 - **Purpose:** IAM service accounts are specific to certain AWS services like EKS (Elastic Kubernetes Service). They are used to grant permissions to Kubernetes pods running on EKS clusters.
 - **Usage:** Service accounts integrate with Kubernetes to provide fine-grained permissions at the pod level using IAM roles for service accounts (IRSA).
 - **Granularity:** Service accounts allow you to define permissions for individual pods, rather than for the entire EC2 instance(Node) where the pod is running. 
-- **Process to configure Service Account for EKS pods:** 
-        1. Make sure OIDC configure
-        2. Create a Role and attach policy to it with required permssions
-        3. Create IAM Service Account and attach the role to grant access to specific aws resources.
+- **Process to configure Service Account for EKS pods:** <br/>
+        1. Make sure OIDC configure  <br/>
+        2. Create a Role and attach policy to it with required permssions<br/>
+        3. Create IAM Service Account and attach the role to grant access to specific aws resources.<br/>
 
         ```
         apiVersion: v1
