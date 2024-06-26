@@ -2,7 +2,7 @@
 
 Please follow the prerequisites doc before this.
 
-## Install using Fargate
+## Create Cluster using eksctl with Fargate as worker node
 
 ```
 eksctl create cluster --name demo-cluster --region us-east-1 --fargate
