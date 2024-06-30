@@ -22,3 +22,31 @@ Roles: IAM roles are used to grant temporary access to AWS resources. Roles are 
 
 Policies: IAM policies are JSON documents that define permissions. Policies specify the actions that can be performed on AWS resources and the resources to which the actions apply. Policies can be attached to users, groups, or roles to control access. IAM provides both AWS managed policies (predefined policies maintained by AWS) and customer managed policies (policies created and managed by you).
 
+
+#### sample policy for personal s3 bucket (allowing only self and deny all others) 
+
+
+```
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "MeriBucketpolicy",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::test-bucket150995",
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:PrincipalArn": [
+                        "arn:aws:iam::992382644584:root",
+                        "arn:aws:iam::992382644584:user/Himanshu"
+                    ]
+                }
+            }
+        }
+    ]
+}
+
+```
