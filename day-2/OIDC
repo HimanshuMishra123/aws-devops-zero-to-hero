@@ -1,0 +1,68 @@
+# let's make OIDC way of access to IAM resources simpler to understand using IAM and EKS:
+
+1. **IAM (Identity and Access Management):**
+   - **Identity Provider (IdP):** IAM is where user accounts and permissions are managed.
+   - **Example:** You create an IAM role called "EKSRole" that has permission to access certain AWS services.
+
+2. **EKS (Elastic Kubernetes Service):**
+   - **Client:** EKS is your Kubernetes cluster that needs to access AWS resources.
+   - **Resource Server:** The AWS services (like S3 or DynamoDB) that your EKS cluster needs to use.
+   - **OIDC (OpenID Connect):** A way for EKS to securely tell IAM who it is and get permission to use AWS services.
+   - **Example:** You set up OIDC so that your EKS cluster can prove to IAM that it’s allowed to use AWS services.
+
+### Diagram:
+
+1. **Without OIDC:**
+   - EKS asks IAM for access directly, using pre-configured roles and permissions.
+
+```
+EKS Cluster --(Direct Request)--> IAM Role (EKSRole) --(Grants Access)--> AWS Services (S3, DynamoDB)
+```
+
+2. **With OIDC:**
+   - EKS uses OIDC to authenticate with IAM first, then IAM grants access to AWS services.
+
+```
+EKS Cluster --(OIDC Authentication)--> IAM --(Grants Access)--> AWS Services (S3, DynamoDB)
+```
+
+### In Summary:
+
+- **IAM** manages who has access to what.
+- **OIDC** is a way for EKS to prove its identity to IAM securely.
+- **EKS** is your Kubernetes cluster needing access to AWS resources.
+
+This ensures that your EKS cluster can securely access AWS services using IAM for managing permissions.
+
+
+## Using OIDC is generally better and more secure for the following reasons:
+
+### Without OIDC:
+- **Direct Request:**
+  - **Pros:**
+    - Simpler to set up initially.
+  - **Cons:**
+    - Less secure because it relies on pre-configured roles and permissions.
+    - Harder to manage and scale as the number of users and roles grows.
+    - No easy way to handle dynamic and fine-grained access control.
+
+### With OIDC:
+- **Secure Authentication:**
+  - **Pros:**
+    - **Enhanced Security:** Provides a secure and standardized way to authenticate users and services.
+    - **Dynamic Permissions:** Easier to manage dynamic and fine-grained access controls.
+    - **Scalability:** Better suited for large-scale deployments with many users and roles.
+    - **Compliance:** Often required for regulatory compliance and best security practices.
+  - **Cons:**
+    - Slightly more complex to set up initially.
+
+### Recommendation:
+Using OIDC is the recommended method because it provides better security, scalability, and flexibility for managing access to AWS resources, especially in larger and more dynamic environments. It ensures that your EKS cluster can securely authenticate with IAM, granting access only to authorized services.
+
+Eaxmple-<br/>
+    Below command will configure oidc under identity provider inside IAM having same OIDC url as of your cluster OIDC url<br/>
+
+```
+eksctl utils associate-iam-oidc-provider --cluster $cluster_name --approve
+
+```
