@@ -1,7 +1,7 @@
 version: 0.2
-#we are using systems manager to store Docker credentials and using them here.
 env:
   parameter-store:
+    # we are using systems manager to store Docker credentials as secrets and using them here.
     DOCKER_REGISTRY_USERNAME: /myapp/docker-credentials/username
     DOCKER_REGISTRY_PASSWORD: /myapp/docker-credentials/password
     DOCKER_REGISTRY_URL: /myapp/docker-registry/url

@@ -68,7 +68,7 @@ Great! Now that we have our repository set up, we can move on to the next step.
 
 6. **Buildspec**:
    - You can either use a buildspec file from your source repository (e.g., buildspec.yml) or define the commands directly in the console(insert build command).
-   - if using build commands, it is very easy as you just have to uncomment what you require (and you can copy the code and save in github repo where your app is as buildspec.yml) 
+   - if using build commands, it is very easy as you just have to uncomment what you require (and you can copy the code and save root of your source code repo as buildspec.yml) 
 
 7. **Artifacts**:
    - **Type**: Choose where to store the build output (e.g., Amazon S3).
