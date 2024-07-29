@@ -30,11 +30,12 @@ hooks:
 
 1. **EC2 Instances**:
    - Ensure you have EC2 instances set up with the necessary environment to run your UI application (e.g., a web server like Apache or Nginx).
-   - The instances should have the CodeDeploy agent installed and running. You can install the agent using a script from the AWS documentation or include it in your instance setup script.
-
+   - The instances should have the CodeDeploy agent installed and running. You can install the agent using a script from the AWS documentation or include it in your instance setup script. To Install the CodeDeploy agent for Ubuntu Server use document link...  https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html
+    - while using the document when on 4th point(wget command), check  `Resource kit bucket names by Region` by clicking on it to get the bucket name as per the region 
+    -systemctl commands to be run with sudo.
 2. **IAM Roles**:
    - Create an IAM role for CodeDeploy with the necessary permissions to deploy your application to the target instances.
-   - Ensure the EC2 instances have a role that allows them to interact with CodeDeploy (e.g., `AmazonEC2RoleforAWSCodeDeploy` policy).
+   - Ensure the EC2 instances also have a role that allows them to interact with CodeDeploy (e.g., `AmazonEC2RoleforAWSCodeDeploy` policy).
 
 ### Step 3: Create a Deployment Group in CodeDeploy
 
