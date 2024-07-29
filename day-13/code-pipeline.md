@@ -21,7 +21,7 @@ AWS CodePipeline is a fully managed continuous delivery service that helps you a
 2. **AWS CodeBuild:** (to implement all the stage as shown in image)
    - Managed build service for compiling code, running tests, and creating deployment-ready packages.
    - Additional Stages: Depending on your needs, you can add additional stages to your pipeline, such as testing, approval, or manual intervention.<br/>
-   - You can also write custom build scripts as well and ignore AWS code build service completely but mostly the followed approach is that people use AWS code build for CI thing.
+   - You can also write custom scripts as well and ignore AWS code build service completely but mostly the followed approach is that people use AWS code build for CI thing.
 
 3. **AWS CodeDeploy:**(take care of CD part)
    - Automates application deployment to Amazon EC2, AWS Fargate, AWS Lambda, or on-premises servers.
@@ -99,4 +99,5 @@ AWS CodePipeline is a fully managed continuous delivery service that helps you a
 
 
 **important comparison**: Jenkins is typically responsible for implementing continuous integration and invoking The Continuous delivery.(it doesn't implement CD just invokes it).<br/>
-whereas AWS code pipeline takes the responsibility of invoking continuous integration(code build) and invoking continuous delivery(code deploy).
+whereas AWS code pipeline takes the responsibility of invoking continuous integration(aws code build) and invoking continuous delivery(code deploy).<br/>
+AWS code pipeline can even invoke the jenkins build as well instead of aws code build.
