@@ -2,11 +2,11 @@
 AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines. It helps you to build, test, and deploy your application every time there is a code change.
 
 ## Key Features of AWS CodePipeline:
-**Continuous Integration and Continuous Delivery (CI/CD):** CodePipeline helps you implement a CI/CD workflow by automating the build, test, and deploy stages of your release process.
-**Integrations with AWS Services:** CodePipeline seamlessly integrates with other AWS services like CodeCommit, CodeBuild, CodeDeploy, and many more, allowing you to create an end-to-end CI/CD pipeline.
-**Visual Workflow:** CodePipeline provides a visual representation of your release pipeline, making it easy to understand and manage the different stages of your deployment process.
-**Versioning and Traceability:** CodePipeline keeps track of all the changes in your pipeline, allowing you to easily revert to a previous state if needed.
-**Scalability and Reliability:** As a fully managed service, CodePipeline scales automatically to handle your pipeline needs, and provides high availability and durability.
+**Continuous Integration and Continuous Delivery (CI/CD):** CodePipeline helps you implement a CI/CD workflow by automating the build, test, and deploy stages of your release process.<br/>
+**Integrations with AWS Services:** CodePipeline seamlessly integrates with other AWS services like CodeCommit, CodeBuild, CodeDeploy, and many more, allowing you to create an end-to-end CI/CD pipeline.<br/>
+**Visual Workflow:** CodePipeline provides a visual representation of your release pipeline, making it easy to understand and manage the different stages of your deployment process.<br/>
+**Versioning and Traceability:** CodePipeline keeps track of all the changes in your pipeline, allowing you to easily revert to a previous state if needed.<br/>
+**Scalability and Reliability:** As a fully managed service, CodePipeline scales automatically to handle your pipeline needs, and provides high availability and durability.<br/>
 
 ![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/391a239a-08a2-4a27-b9ad-68a98edfa488)
 
