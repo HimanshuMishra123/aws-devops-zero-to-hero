@@ -10,7 +10,7 @@ Scalability and Reliability: As a fully managed service, CodePipeline scales aut
 
 ![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/391a239a-08a2-4a27-b9ad-68a98edfa488)
 
-## How does AWS CodePipeline work?
+## How does AWS CodePipeline work? 
 Source Stage: This is the starting point of your pipeline, where you define the source of your application code, such as GitHub, Bitbucket, or AWS CodeCommit.
 Build Stage: In this stage, you define the steps to build your application, such as compiling the code, running unit tests, and creating a deployable artifact (e.g., a Docker image or a deployment package).
 Deploy Stage: This stage is responsible for deploying your application to the target environment, such as EC2, ECS, or Lambda.
@@ -31,3 +31,5 @@ Community and Ecosystem
 Portability
 Cost Optimization
 Existing Skills and Experience
+
+**important comparison**: Jenkins is typically responsible for two actions one is continuous integration and the second thing is to invoke The Continuous delivery.(it doesn't do CD just invokes it).
