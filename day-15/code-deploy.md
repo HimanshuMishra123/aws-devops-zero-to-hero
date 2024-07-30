@@ -48,7 +48,7 @@ hooks:
    - **Compute Platform**: Choose "EC2/On-premises" for deploying to EC2 instances.
 
 3. **Create a Deployment Group**:
-   - **Deployment Group Name**: Enter a name for the deployment group.
+   - **Deployment Group Name**: Enter a name for the deployment group.(example- microservice or service this ec2 belongs )
    - **Service Role**: Select the IAM role that allows CodeDeploy to deploy to your instances.
    - **Deployment Type**: Choose between "In-place" (updates the same instances) or "Blue/Green" (deploys to a new set of instances).
    - **Environment Configuration**: Define the instances to which CodeDeploy will deploy the application. This can be done using tags, Auto Scaling groups, or manually selected instances.
