@@ -69,16 +69,36 @@ hooks:
 
 1. **Prepare the Application Bundle**:
    - Package your application files, including the `appspec.yml` file and any necessary scripts. This can be done using a ZIP file or other supported formats.
-   - `appspec.yml` file defines how to deploy an application. It contains deployment instructions, including where application files should be copied, what scripts should be run before and after the deployment, and other deployment lifecycle events.
+   - `appspec.yml` file defines how to deploy an application. It contains deployment instructions, including where application files should be copied, what scripts should be run before and after the deployment, and other deployment lifecycle events. `appspec.yml` should be at the root of your repo.
+
+
+```yaml
+version: 0.0
+os: linux
+files:
+  - source: /path/to/source
+    destination: /var/www/html
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: root
+```
+>> write separate shell file start_server.sh and install_dependencies.sh 
 
 2. **Upload the Application Bundle to you code versioning area**:
    - Upload the package to an S3 bucket or an external repository(on github) if not using CodeCommit.
 
 3. **Create a Deployment**:
-   - Go to your CodeDeploy application and click "Create deployment."
+   - Go to your CodeDeploy application and under deployment click on "Create deployment."
    - **Deployment Group**: Select the deployment group created earlier.
    - **Revision Type**: Select where your application bundle is stored (e.g., S3, GitHub).
-   - **Revision Location**: Provide the path to your application bundle.
+   - **Revision Location**: Provide the path/repo name(HimanshuMishra123/aws-devops-zero-to-hero) to your application bundle.>> if you are doing complete CI/CD then `commit id` is not needed but if you just want to test the CD then provide latest commit id of that repo.
+>> click on `create deployment`
 
 4. **Start the Deployment**:
    - Start the deployment and monitor its progress in the CodeDeploy console. The console will display the status and any logs from the deployment lifecycle events.
@@ -86,7 +106,7 @@ hooks:
 ### Step 5: Verify the Deployment
 
 1. **Check the Application**:
-   - Verify that the UI application is deployed correctly by accessing the EC2 instance or the web server where it’s hosted.
+   - Verify that the application is deployed correctly by accessing the EC2 instance or the web server where it’s hosted.
 
 2. **Monitor Logs and Metrics**:
    - Use CloudWatch Logs, CodeDeploy logs, and CloudWatch metrics to monitor the application's performance and health.
