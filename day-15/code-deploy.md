@@ -39,7 +39,8 @@ hooks:
     - while using the document when on 4th point(wget command), check  `Resource kit bucket names by Region` by clicking on it to get the bucket name as per the region 
     - systemctl commands to be run with sudo.
     - whenever you do any configurations always restart the  `CodeDeploy agent`>> sudo service codedeploy-agent restart
-
+    - if you are deploy app as container then better install the docker also>>  `sudo apt install docker.io -y`
+   
 2. **IAM Roles**:
    - Create an IAM role for CodeDeploy with the necessary permissions to deploy your application to the target instances.
    - Ensure the EC2 instances also have a role that allows them to interact with CodeDeploy (e.g., `AmazonEC2RoleforAWSCodeDeploy` policy).
@@ -61,7 +62,7 @@ hooks:
    - **Deployment Type**: Choose between "In-place" (updates the same instances) or "Blue/Green" (deploys to a new set of instances).
    - **Environment Configuration**: Define the instances to which CodeDeploy will deploy the application. This can be done using tags, Auto Scaling groups, or manually selected instances.(example: if EC2 instance the in tags>> key: specific key(ex-project), Value: <name-of-your-app/project>). If the same tag is on 10 EC2 instance then it can deploy app to group of 10 EC2 instance.
    - **Deployment Settings**:`(you can ignore this step for now, only needed in org. setup)` >> Configure additional settings like deployment configurations (e.g., OneAtATime, HalfAtATime), rollback behavior, and monitoring options.
-   - **Load Balancer**: Disable/deselect it. as we don't need load balancer for deployment
+   - **Load Balancer**: Disable/deselect it. as we don't need load balancer for deployment now.
     
      >> click on `create deployment group`
 
@@ -88,7 +89,7 @@ hooks:
       timeout: 300
       runas: root
 ```
->> write separate shell file start_server.sh and install_dependencies.sh 
+>> write separate shell scripts start_server.sh and install_dependencies.sh etc.
 
 2. **Upload the Application Bundle to you code versioning area**:
    - Upload the package to an S3 bucket or an external repository(on github) if not using CodeCommit.
@@ -115,3 +116,9 @@ hooks:
    - If the deployment encounters issues, use the rollback options configured in the deployment group settings.
 
 By following these steps, you can set up and use AWS CodeDeploy to automate the deployment of a UI project to EC2 instances, ensuring a consistent and reliable deployment process.
+
+### Step 6: Add code deploy in code pipeline
+   - Go to your pipeline where you want to add the deploy stage and click on edit.
+   - After the Build (code build) stage , click on add stage and give the name as code deploy(optional to give anything)
+   - click on add action group in code deploy stage, give any action name(ex- code deploy), action provider(AWS CodeDeploy), Input artifacts (Build Artifact), select application name and deployment group (from drop-down as you type).>> Done >> save >> pipeline complete so to test you can commit a slight change in code inside your repo and it will trigger the pipeline.
+   

@@ -3,6 +3,7 @@ os: linux
 
 hooks:
   ApplicationStop:
+      # to stop previously running app container (if it was already deployed) bcoz it will contradict with new coming container on port no. as that will be same
     - location: scripts/stop_container.sh
       timeout: 300
       runas: root
