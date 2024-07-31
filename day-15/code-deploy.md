@@ -95,6 +95,8 @@ hooks:
    - Upload the package to an S3 bucket or an external repository(on github) if not using CodeCommit.
 
 3. **Create a Deployment**:
+   ![Day-15 _ AWS ULTIMATE CICD PIPEPLINE _ END TO END DEMO _ AWS CODE PIPELINE _ #aws #devops #cicd 35-8 screenshot](https://github.com/user-attachments/assets/d6586f8e-b7f7-4cb1-8f3b-b5b86d19c626)
+
    - Go to your CodeDeploy application and under deployment click on "Create deployment."
    - **Deployment Group**: Select the deployment group created earlier.
    - **Revision Type**: Select where your application bundle is stored (e.g., S3, GitHub).
@@ -103,6 +105,9 @@ hooks:
 
 4. **Start the Deployment**:
    - Start the deployment and monitor its progress in the CodeDeploy console. The console will display the status and any logs from the deployment lifecycle events.
+  
+![Day-15 _ AWS ULTIMATE CICD PIPEPLINE _ END TO END DEMO _ AWS CODE PIPELINE _ #aws #devops #cicd 39-41 screenshot](https://github.com/user-attachments/assets/62dcf52b-84b8-4208-b67c-03ba3a1a54a6)
+  - click on view events to check what is going on and troubleshoot.
 
 ### Step 5: Verify the Deployment
 
