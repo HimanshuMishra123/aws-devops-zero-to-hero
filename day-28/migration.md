@@ -34,6 +34,10 @@ Migrating applications to the AWS cloud involves a comprehensive strategy that g
 
 #### Cloud Migration Strategies (7 R's)
 
+![7-R-1024x516](https://github.com/user-attachments/assets/61bc7090-ca8a-42ff-b6f8-2e46bd5b6692)
+![Day-28 _ Migrating applications to AWS cloud _ Complete project details _  #aws #abhishekveeramalla 33-18 screenshot](https://github.com/user-attachments/assets/6c22e89c-2d2f-4075-aad6-526db4032f0a)
+
+
 1. **Rehost (Lift and Shift)**
    - Minimal changes to applications.
    - Simply move applications from on-premises to the cloud.
@@ -50,19 +54,22 @@ Migrating applications to the AWS cloud involves a comprehensive strategy that g
 
 4. **Repurchase**
    - Move to a different product, typically a cloud-based version of the application.
-
-5. **Retire**
+     
+5. **Relocate**
+   - Move entire datacenters from one location to another, often used when changing cloud providers or regions.
+     
+6. **Retire**
    - Decommission applications that are no longer needed.
 
-6. **Retain**
+7. **Retain**
    - Keep applications as-is, typically due to technical limitations or strategic decisions.
-
-7. **Relocate**
-   - Move entire datacenters from one location to another, often used when changing cloud providers or regions.
 
 ---
 
 #### Detailed Steps for Each Stage
+
+![Day-28 _ Migrating applications to AWS cloud _ Complete project details _  #aws #abhishekveeramalla 21-53 screenshot](https://github.com/user-attachments/assets/94867292-a522-4f6c-b48a-2f7cc9a3bcd2)
+
 
 **Preparation:**
 
@@ -126,3 +133,6 @@ Migrating applications to the AWS cloud involves a comprehensive strategy that g
 ### Conclusion
 
 Migrating applications to the AWS cloud requires thorough preparation, careful planning, and diligent execution. By following the outlined steps and strategies, organizations can ensure a smooth transition to the cloud, leveraging AWS's capabilities to enhance performance, scalability, and cost-efficiency. Remember, real-world experience and the ability to adapt to specific project needs are crucial for a successful migration.
+
+![5-Strategies-for-Migrating-Applications-to-Cloud](https://github.com/user-attachments/assets/43e65792-1562-43f3-b867-09dc3da267d8)
+![DI5wX5iVYAIaSL0](https://github.com/user-attachments/assets/e137046e-2c05-458e-ba13-2912b1ee2075)
