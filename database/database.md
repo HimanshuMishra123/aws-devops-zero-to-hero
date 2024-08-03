@@ -1,4 +1,8 @@
-### Learning Databases as an AWS DevOps Engineer
+### Databases Notes
+
+![0_kUHyd26FyzKeoiZX](https://github.com/user-attachments/assets/160c0a6d-e9ec-4da7-9de3-ee8f7134b736)
+
+![0_lbtSAeYRtmUMAWeY](https://github.com/user-attachments/assets/d80ef9ed-dcf6-47f4-be02-3f5f9fdce78f)
 
 #### 1. **Fundamentals of Databases**
    - **Types of Databases**: Relational (SQL), Non-relational (NoSQL)
@@ -6,14 +10,17 @@
    - **Data Models**: Schemas, tables, relationships for SQL; collections, documents for NoSQL
    - **CRUD Operations**: Create, Read, Update, Delete
 
-#### 2. **Relational Databases (SQL)**
+#### 2. **Relational Databases (SQL)** 
+   ![rdbms](https://github.com/user-attachments/assets/f374d8a6-328e-44ef-8edb-3527cb9667a9)
+
+   - SQL stand for structured query language which is used for update, delet, insert data in table or Relational database.
    - **SQL Basics**: SELECT, INSERT, UPDATE, DELETE
    - **Joins**: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN
    - **Indexes**: Improve query performance, types (B-Tree, Hash)
    - **Transactions**: ACID properties (Atomicity, Consistency, Isolation, Durability)
    - **Normalization**: Organizing data to reduce redundancy (1NF, 2NF, 3NF)
 
-#### 3. **NoSQL Databases**
+#### 3. **Non-relational Databases(NoSQL)**
    - **Types of NoSQL Databases**: Document-based (e.g., MongoDB), Key-Value (e.g., Redis), Column-family (e.g., Cassandra), Graph (e.g., Neo4j)
    - **Basic Operations**: Inserting, querying, updating documents or key-value pairs
    - **Use Cases**: Scalability, unstructured data, flexibility in schema design
