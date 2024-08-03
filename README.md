@@ -2,7 +2,8 @@
 
 ![image](https://github.com/HimanshuMishra123/aws-devops-zero-to-hero/assets/164254902/669a370d-90c8-45ff-8c37-2707cab6ca8e)
 
-
+![8092f9dc-ca58-4466-ae2a-36d2bb4d371c](https://github.com/user-attachments/assets/e89a956e-61ce-46b4-b4bb-f63faff41f8d)
+https://blog.oceansoft.io/expose-kubernetes-microservices-hosted-on-private-subnets-and-on-premises-networks
 
 # aws-devops-zero-to-hero
 
