@@ -10,6 +10,7 @@
 ---
 
 #### 1. **Fundamentals of Databases**
+A DBMS is a software system designed to provide data management services
    - **Types of Databases**: Relational (SQL), Non-relational (NoSQL)
    - **Database Management Systems (DBMS)**: Software for creating and managing databases (e.g., MySQL, PostgreSQL, MongoDB, DynamoDB)
    - **Data Models**: Schemas, tables, relationships for SQL; collections, documents for NoSQL
