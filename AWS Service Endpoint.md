@@ -13,3 +13,7 @@ In AWS, a service endpoint is a URL that allows your applications to connect to 
 Each type of endpoint serves different purposes, and choosing the right one depends on your application’s architecture and security requirements.
 
 ![image](https://github.com/user-attachments/assets/d762fbb0-4860-4001-a081-490cd05b4df7)
+
+![image](https://github.com/user-attachments/assets/68fe6242-2daf-4bc9-a348-4c50985b6c3e)
+
+![1_WZEobFTXkvNE7MoHxS1Eyg](https://github.com/user-attachments/assets/fb90a0fc-3795-4f37-8577-177eb20b0875)
