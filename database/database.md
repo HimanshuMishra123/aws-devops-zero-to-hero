@@ -78,3 +78,4 @@ ACID compliance is crucial for applications requiring high reliability and consi
 - **Migration Tools**: AWS DMS for seamless migration
 
 Focusing on these core concepts will provide a solid foundation in database management and operations as an AWS DevOps engineer.
+![Book1](https://github.com/user-attachments/assets/53dcb329-2a83-4bd4-bebd-804fd5a1bc52)
