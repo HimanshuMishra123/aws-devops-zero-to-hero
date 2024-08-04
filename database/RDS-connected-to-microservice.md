@@ -112,8 +112,7 @@ Setting up Amazon RDS for a microservice application running on Amazon EKS invol
 
 By following these steps, you’ll set up Amazon RDS to work seamlessly with your microservices running on Amazon EKS.
 
-
-------------------
+---
 
 For **Amazon RDS**, you don't manage the instance via Kubernetes. Instead, you configure it through the AWS Management Console, AWS CLI, or AWS SDKs. You’ll create and manage the RDS instance directly in AWS and connect your microservices to it using connection details provided by RDS (endpoint, port, etc.). For managed services like RDS, your focus is on `configuring` and `managing` your microservice deployments to interact with the external RDS instance.
 
