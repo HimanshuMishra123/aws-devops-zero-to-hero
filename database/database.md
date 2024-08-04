@@ -19,13 +19,19 @@
    - **Indexes**: Improve query performance, types (B-Tree, Hash)
    - **Transactions**: ACID properties (Atomicity, Consistency, Isolation, Durability)
    - **Normalization**: Organizing data to reduce redundancy (1NF, 2NF, 3NF)
+   - **Examples**: MySQL, PostgreSQL, Oracle, SQL Server.
 
 #### 3. **Non-relational Databases(NoSQL)**
    - **Types of NoSQL Databases**: Document-based (e.g., MongoDB), Key-Value (e.g., Redis), Column-family (e.g., Cassandra), Graph (e.g., Neo4j)
    - **Basic Operations**: Inserting, querying, updating documents or key-value pairs
    - **Use Cases**: Scalability, unstructured data, flexibility in schema design
 
+#### Use Cases:
+- **SQL**: Ideal for applications requiring complex queries, transactions, and relationships between data, such as financial systems, ERP systems, and traditional web applications.
+- **NoSQL**: Suitable for applications with large volumes of unstructured data, requiring high scalability and flexibility, such as real-time analytics, content management systems, and big data applications.
+
 #### 4. **AWS Database Services** (Refer Excel file name Database-comparison.xlsx for better understanding)
+![Book1](https://github.com/user-attachments/assets/53dcb329-2a83-4bd4-bebd-804fd5a1bc52)
    - **Amazon RDS**: Managed relational database service (supports MySQL, PostgreSQL, MariaDB, Oracle, SQL Server)
      - **Key Features**: Automated backups, Multi-AZ deployments, Read replicas
    - **Amazon DynamoDB**: Managed NoSQL database service
@@ -69,13 +75,44 @@
       3. **Isolation**: Ensures that the intermediate state of a transaction is invisible to other transactions, preventing concurrent transactions from affecting each other.
       4. **Durability**: Ensures that once a transaction is committed, it remains in the system even in the event of a system failure.
 
-ACID compliance is crucial for applications requiring high reliability and consistency, such as financial transactions and critical data processing systems. 
-- **Normalization**: Reduces redundancy, ensures data integrity
+      - Mostly all SQL databases are designed to be ACID compliant, whereas NoSQL is a vast ecosystem of entirely different architectures and servers. Many of them are, in fact by design, not ACID compliant. Many will sacrifice reliability for speed.(But Amazon Dynamodb and Amazon Neptune provide Built-in support for ACID transactions).
+      
+      - ACID compliance is crucial for applications requiring high reliability and consistency, such as financial transactions and critical data processing systems. 
+
+- **Normalization**: Reduces redundancy(eliminate repetition), ensures data integrity
+      **Explain the concept of database normalization. Why is it important, and what are some common normal forms used in relational databases?**
+
+      **Normalization**:
+      - **Definition**: Database normalization is the process of organizing a database to reduce redundancy and improve data integrity. It involves decomposing tables into smaller, related tables and defining relationships between them.
+
+      **Importance**:
+      - **Reduces Redundancy**: By eliminating duplicate data, normalization helps save storage space and reduces the risk of inconsistencies.
+      - **Improves Integrity**: Ensures that data dependencies are correctly enforced, reducing anomalies and ensuring data accuracy.
+
+      **Common Normal Forms**:(not that much important)
+      - **First Normal Form (1NF)**: Requires that each column contain atomic (indivisible) values and that each column in a table has a unique name.
+      - **Second Normal Form (2NF)**: Achieved when a table is in 1NF and all non-key attributes are fully functionally dependent on the entire primary key (not just part of it).
+      - **Third Normal Form (3NF)**: Achieved when a table is in 2NF and all the attributes are functionally dependent only on the primary key, not on other non-key attributes (eliminating transitive dependency).
+
 - **RDS vs. DynamoDB**: RDS for structured, relational data; DynamoDB for flexible, scalable NoSQL
 - **Security Best Practices**: Encrypt data, restrict access with IAM, use VPCs
 - **Performance Monitoring**: Use CloudWatch, Performance Insights to identify bottlenecks
 - **Backup and Recovery**: Regular backups, snapshots, know how to restore
 - **Migration Tools**: AWS DMS for seamless migration
 
-Focusing on these core concepts will provide a solid foundation in database management and operations as an AWS DevOps engineer.
-![Book1](https://github.com/user-attachments/assets/53dcb329-2a83-4bd4-bebd-804fd5a1bc52)
+
+**How do you handle database backups and recovery in a production environment? Can you discuss any tools or strategies you use to ensure data integrity and minimize downtime?**
+
+   **Backups**:
+   - **Types**: Perform regular full backups (complete snapshot of the database) and incremental or differential backups (only the changes since the last backup) to ensure data can be restored with minimal loss.
+   - **Scheduling**: Implement a backup schedule that balances the need for up-to-date backups with resource usage. This might include daily full backups and more frequent incremental backups.
+   - **Testing**: Regularly test backups to ensure they can be restored successfully and verify the integrity of the backed-up data.
+
+   **Recovery**:
+   - **Tools**: Use built-in database tools for backup and recovery, such as `mysqldump` for MySQL, `pg_dump` for PostgreSQL, or specialized tools like AWS RDS automated backups for managed services.
+   - **Disaster Recovery Plan**: Develop a comprehensive disaster recovery plan that includes steps for data restoration, application recovery, and failover procedures.
+   - **High Availability**: Implement high availability solutions like database clustering, replication, and failover mechanisms to minimize downtime and ensure continuous access to data.
+
+   **Strategies**:
+   - **Automate**: Use automation tools to schedule and manage backups, reducing manual intervention and the risk of human error.
+   - **Monitor**: Continuously monitor backup processes and storage to ensure backups are completed successfully and there are no issues with the backup systems.
