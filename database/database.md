@@ -4,6 +4,8 @@
 
 ![0_lbtSAeYRtmUMAWeY](https://github.com/user-attachments/assets/d80ef9ed-dcf6-47f4-be02-3f5f9fdce78f)
 
+![A](https://github.com/user-attachments/assets/10d6e087-22de-4cd0-9e3a-5eb748760920)
+
 #### 1. **Fundamentals of Databases**
    - **Types of Databases**: Relational (SQL), Non-relational (NoSQL)
    - **Database Management Systems (DBMS)**: Software for creating and managing databases (e.g., MySQL, PostgreSQL, MongoDB, DynamoDB)
