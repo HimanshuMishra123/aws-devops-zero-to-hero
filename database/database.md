@@ -25,7 +25,7 @@
    - **Basic Operations**: Inserting, querying, updating documents or key-value pairs
    - **Use Cases**: Scalability, unstructured data, flexibility in schema design
 
-#### 4. **AWS Database Services**
+#### 4. **AWS Database Services** (Refer Excel file name Database-comparison.xlsx for better understanding)
    - **Amazon RDS**: Managed relational database service (supports MySQL, PostgreSQL, MariaDB, Oracle, SQL Server)
      - **Key Features**: Automated backups, Multi-AZ deployments, Read replicas
    - **Amazon DynamoDB**: Managed NoSQL database service
