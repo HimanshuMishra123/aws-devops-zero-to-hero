@@ -1,7 +1,10 @@
+**As shown below we can do other DBMS in many ways. **
+
 MySQL databases can be deployed and managed on AWS using various services, each catering to different needs and use cases. Here are the primary options:
 
 ### 1. Amazon RDS for MySQL
-Amazon RDS (Relational Database Service) is a managed service that makes it easy to set up, operate, and scale MySQL databases in the cloud. Here's how it works:
+Amazon RDS (Relational Database Service) is a managed service that makes it easy to set up, operate, and scale MySQL databases in the cloud. <br/>
+In Amazon RDS the database storage(EBS voulme) is managed by AWS and is located in the same region where your RDS instance is deployed.
 
 #### Key Features:
 - **Automated Provisioning:** AWS handles the provisioning of the underlying infrastructure.
@@ -48,3 +51,6 @@ When running MySQL on Amazon EC2, Amazon Elastic Block Store (EBS) is a primary 
 2. **Install MySQL:** Connect to the EC2 instance and install MySQL using your preferred method (e.g., package manager, binary installation).
 3. **Configure MySQL:** Set up the MySQL configuration files and parameters according to your needs.
 4. **Connect to MySQL:** Use standard MySQL tools and drivers to connect to the MySQL instance on the EC2 instance.
+
+
+**In Similiar way we can do other DBMS in many ways. **
