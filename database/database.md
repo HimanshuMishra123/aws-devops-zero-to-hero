@@ -6,6 +6,9 @@
 
 ![A](https://github.com/user-attachments/assets/10d6e087-22de-4cd0-9e3a-5eb748760920)
 
+![DBBLOG-1382-1-WHITE](https://github.com/user-attachments/assets/3a6f4718-6978-4431-9e44-31115d8150ce)
+
+
 #### 1. **Fundamentals of Databases**
    - **Types of Databases**: Relational (SQL), Non-relational (NoSQL)
    - **Database Management Systems (DBMS)**: Software for creating and managing databases (e.g., MySQL, PostgreSQL, MongoDB, DynamoDB)
@@ -118,3 +121,7 @@
    **Strategies**:
    - **Automate**: Use automation tools to schedule and manage backups, reducing manual intervention and the risk of human error.
    - **Monitor**: Continuously monitor backup processes and storage to ensure backups are completed successfully and there are no issues with the backup systems.
+
+### Website scenario with API engine and Database Management System in an on-premises data center
+![website-scenario-with-api-engine](https://github.com/user-attachments/assets/375261b5-8bb6-4cba-ab52-6c88906a9efc)
+https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/website-scenario-with-api-engine-and-database-management-system-in-an-on-premises-data-center.html
