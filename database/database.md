@@ -1,13 +1,13 @@
 ### Databases Notes
 
 ![0_kUHyd26FyzKeoiZX](https://github.com/user-attachments/assets/160c0a6d-e9ec-4da7-9de3-ee8f7134b736)
-
+---
 ![0_lbtSAeYRtmUMAWeY](https://github.com/user-attachments/assets/d80ef9ed-dcf6-47f4-be02-3f5f9fdce78f)
-
+---
 ![A](https://github.com/user-attachments/assets/10d6e087-22de-4cd0-9e3a-5eb748760920)
-
+---
 ![DBBLOG-1382-1-WHITE](https://github.com/user-attachments/assets/3a6f4718-6978-4431-9e44-31115d8150ce)
-
+---
 
 #### 1. **Fundamentals of Databases**
    - **Types of Databases**: Relational (SQL), Non-relational (NoSQL)
