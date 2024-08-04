@@ -62,6 +62,14 @@
 - **CRUD Operations**: Basic building blocks of database interaction
 - **Indexes and Joins**: Essential for performance and complex queries
 - **ACID Transactions**: Critical for data integrity in relational databases
+      ACID compliance refers to a set of properties that ensure reliable processing of database transactions. These properties are:
+
+      1. **Atomicity**: Ensures that all parts of a transaction are completed successfully. If any part of the transaction fails, the entire transaction is rolled back, and no changes are applied.
+      2. **Consistency**: Ensures that a transaction brings the database from one valid state to another, maintaining the integrity of the data.
+      3. **Isolation**: Ensures that the intermediate state of a transaction is invisible to other transactions, preventing concurrent transactions from affecting each other.
+      4. **Durability**: Ensures that once a transaction is committed, it remains in the system even in the event of a system failure.
+
+ACID compliance is crucial for applications requiring high reliability and consistency, such as financial transactions and critical data processing systems. 
 - **Normalization**: Reduces redundancy, ensures data integrity
 - **RDS vs. DynamoDB**: RDS for structured, relational data; DynamoDB for flexible, scalable NoSQL
 - **Security Best Practices**: Encrypt data, restrict access with IAM, use VPCs
