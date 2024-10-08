@@ -15,8 +15,8 @@ In AWS (Amazon Web Services), IAM (Identity and Access Management) roles and IAM
 - **Granularity:** Service accounts allow you to define permissions for individual pods, rather than for the entire EC2 instance(Node) where the pod is running. 
 - **Process to configure Service Account for EKS pods:** <br/>
         1. Make sure OIDC configure  <br/>
-        2. Create a Role and attach policy to it with required permssions<br/>
-        3. Create IAM Service Account and attach the role to grant access to specific aws resources.<br/>
+        2. Create a IAM Role and attach policy to it with required permssions<br/>
+        3. Create IAM Service Account (on k8s cluster) and attach the role to grant access to specific aws resources.<br/>
 
         ```
         apiVersion: v1
