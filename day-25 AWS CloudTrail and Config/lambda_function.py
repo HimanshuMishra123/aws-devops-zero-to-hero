@@ -2,7 +2,7 @@ import boto3
 import json
 
 #lambda_handler function is triggered by aws config
-#event parameter contains data(JSON) that triggered the labda function (Example - if your function is triggered by a change in an EC2 instance configuration, event will include information about that change)
+#event parameter contains data(JSON) that triggered the lambda function (Example - if your function is triggered by a change in an EC2 instance configuration, event will include information about that change)
 #context parameter contains information about the Lambda function’s execution environment. Example - Request ID , Function name etc.
 def lambda_handler(event, context):          
 
